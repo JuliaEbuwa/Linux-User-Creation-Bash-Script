@@ -2,7 +2,7 @@
 
 TEXT_FILE="users_and_groups.txt"
 LOG_FILE="/var/log/user_management.log"
-PASSWORD_FILE="/var/secure/user_passwords.txt"
+PASSWORD_FILE="/var/secure/user_passwords.csv"
 
 # Check if text file exists, if not end script
 if ! [ -f "$TEXT_FILE" ]; then 
