@@ -15,8 +15,8 @@ sudo mkdir -p /var/log && sudo touch "$LOG_FILE"
 sudo mkdir -p /var/secure && sudo touch "$PASSWORD_FILE"
 
 # Set appropriate permissions and ownership
-sudo chmod 777 "$LOG_FILE"
-sudo chmod 777 "$PASSWORD_FILE"
+sudo chmod 600 "$LOG_FILE"
+sudo chmod 600 "$PASSWORD_FILE"
 
 OWNER="root:root"
 sudo chown "$OWNER" "$LOG_FILE"
